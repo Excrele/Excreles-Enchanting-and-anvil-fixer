@@ -1,0 +1,6 @@
+name: EEAF
+version: 1.0
+main: com.excrele.eeaf.EEAF
+author: excrele
+api-version: 1.21
+description: Excrele's Enchanting and Anvil Fixer - Higher enchants and no "too expensive" limits!
