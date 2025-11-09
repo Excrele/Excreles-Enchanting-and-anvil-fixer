@@ -3,4 +3,25 @@ version: 1.0
 main: com.excrele.eeaf.EEAF
 author: excrele
 api-version: 1.21
-description: Excrele's Enchanting and Anvil Fixer - Higher enchants and no "too expensive" limits!
+description: Excrele's Enchanting and Anvil Fixer - Higher enchants, no "too expensive" anvil limits, plus reload/boost commands!
+
+commands:
+  eeaf:
+    description: Main command for EEAF - Use /eeaf reload or /eeaf boost <player> <percent> <time>
+    usage: /eeaf <reload|boost <player> <percent> <time (d/h/m)>>
+    permission: eeaf.admin
+    aliases: [excrele, enchantingfix]
+
+permissions:
+  eeaf.admin:
+    description: Full access - Reload config and boost players!
+    children:
+      eeaf.reload: true
+      eeaf.boost: true
+    default: op
+  eeaf.reload:
+    description: Reloads the config (overenchant chance).
+    default: op
+  eeaf.boost:
+    description: Temporarily boosts a player's overenchant chance.
+    default: op
